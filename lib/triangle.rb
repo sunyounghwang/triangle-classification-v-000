@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    if
+    if sides.all? { |side| side > 0  }
 
     case sides.uniq.size
     when 1
