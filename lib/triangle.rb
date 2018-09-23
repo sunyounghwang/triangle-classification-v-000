@@ -9,8 +9,11 @@ class Triangle
 
   def kind
     case [a,b,c].uniq.size
-    when 1 then :equilateral
-    when 2 then :isosceles
-    else        :scalene
+    when 1
+      :equilateral
+    when 2
+      :isosceles
+    else
+      :scalene
     end
 end
