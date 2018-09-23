@@ -11,7 +11,7 @@ class Triangle
   def kind
     if sides.none? { |side| side > 0 }
       raise TriangleError
-    elsif sides.
+    elsif a + b < c || a + c < b || b + c < a
 
     end
 
