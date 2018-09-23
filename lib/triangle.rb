@@ -11,7 +11,7 @@ class Triangle
   def kind
     if
 
-    case [@a, @b, @c].uniq.size
+    case sides.uniq.size
     when 1
       :equilateral
     when 2
