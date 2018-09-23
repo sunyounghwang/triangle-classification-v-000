@@ -8,7 +8,7 @@ class Triangle
   end
 
   def kind
-    case [@a,@b,@c].uniq.size
+    case [@a, @b, @c].uniq.size
     when 1
       :equilateral
     when 2
