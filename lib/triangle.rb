@@ -11,6 +11,7 @@ class Triangle
   def kind
     if sides.none? { |side| side > 0 }
       raise TriangleError
+    end
 
     case sides.uniq.size
     when 1
