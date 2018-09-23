@@ -1,5 +1,5 @@
 class Triangle
-  attr_accessor :side1, :side2, :side3
+  attr_accessor :side1, :side2, :side3, :sides
 
   def initialize(a, b, c)
     @a = a
@@ -8,6 +8,8 @@ class Triangle
   end
 
   def kind
+    if
+
     case [@a, @b, @c].uniq.size
     when 1
       :equilateral
@@ -19,5 +21,6 @@ class Triangle
   end
 
   class TriangleError < StandardError
+
   end
 end
